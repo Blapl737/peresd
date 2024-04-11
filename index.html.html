@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>КупиКота</title>
+<style>
+    body{
+    background-color: #a646fb;
+    } 
+.header{
+  background-image: Путь к картинке;
+  height: 100vh;
+  background-size: cover;
+}
+  .card {
+    flex-basis: calc(33.333% - 20px);
+    background: #f9f9f9;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  }
+  .card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+  .card h3 {
+    margin-bottom: 10px;
+  }
+  .card p {
+    margin-bottom: 20px;
+    font-size: 0.9em;
+    color: #666;
+  }
+  .card .btn {
+    text-decoration: none;
+    color: white;
+    background: #333;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  .card .btn:hover {
+    background-color: #555;
+  }
+  li{
+    float: center;
+    display: flex;
+    color: white;
+    text-align: center;
+    padding-top: 13px;
+    padding-left: 50px;
+    text-decoration: none;
+  }
+    .nobullet{
+    display: flex;
+    text-decoration: none;
+    }
+    .a1{
+    padding-right: 60px;
+    text-decoration: none;
+    }
+    a{
+        text-decoration: none;
+        color: white ;
+    }
+    h1{
+    color: white;
+    }
+    .container_2{
+    height: 300px;
+    text-align: center;
+    }
+    p{
+    padding-top: 15px;
+    }
+
+</style>
+</head>
+<body>
+<div class="container">
+    <div class="ul-menu">
+        <ul class="nobullet">
+            <li><a class="a1" href="">КупиКота</a></li>
+            <li><a href="">Купить кота</a></li>
+            <li><a href="">Продать кота</a></li>
+            <li><a href="">Преимущества</a></li>
+            <li><a href="">Заказать обратный звонок</a></li>
+        </ul>
+    </div>
+    <div class="container_2">
+    <h1>КупиКота</h1>
+    <p>Продажа и покупка котов от заводчиков</p>
+    <p>+7920333-33-33</p>
+    <a href="#" class="btn">Написать нам</a>
+  </div>
+</header>
+<section class="cards">
+  <div class="container">
+    <section class="cards">
+  <div class="container">
+    <div class="card">
+      <img src="img/еее.jfif" alt="Кот номер один">
+      <h3>Кот Персидский</h3>
+      <p>Персидский кот - это порода длинношерстных котов, которая отличается своей элегантностью и спокойным характером.</p>
+      <a href="#" class="btn">Узнать больше</a>
+    </div>
+    <div class="card">
+      <img src="img/images (1).jfif" alt="Кот номер два">
+      <h3>Кот Сиамский</h3>
+      <p>Сиамский кот - это грациозная порода с ярко выраженным контрастом цвета между основной частью тела и конечностями.</p>
+      <a href="#" class="btn">Узнать больше</a>
+    </div>
+    <div class="card">
+      <img src="img/images.jfif" alt="Кот номер три">
+      <h3>Кот Мейн-кун</h3>
+      <p>Мейн-кун - это одна из крупнейших пород домашних котов, известных своим дружелюбным и игривым нравом.</p>
+      <a href="#" class="btn">Узнать больше</a>
+    </div>
+  </div>
+</section>
+<section class="form-container">
+  <div class="container">
+  </div>
+</section>
+<footer>
+<style>
+    .sell-cat, .order-form {
+        background-color: #fff;
+        padding: 20px;
+        margin: 20px 0;
+        border-radius: 5px;
+        text-align: center;
+    }
+    .sell-cat h2, .order-form h2 {
+        color: #333;
+        margin-bottom: 15px;
+    }
+    .sell-cat p, .order-form p {
+        color: #666;
+        margin-bottom: 20px;
+    }
+    .sell-cat .btn, .order-form .btn {
+        background-color: #333;
+        color: #fff;
+        padding: 10px 20px;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: background-color 0.3s;
+    }
+    .sell-cat .btn:hover, .order-form .btn:hover {
+        background-color: #333;
+    }
+    .order-form label {
+        display: block;
+        margin: 10px 0 5px;
+        color: #333;
+    }
+    .order-form input, .order-form textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        border-radius: 5px;
+        border: 1px solid #ddd;
+    }
+    .order-form textarea {
+        resize: vertical;
+    }
+</style>
+</head>
+<body>
+<section class="sell-cat">
+    <h2>Хотите продать кота?</h2>
+    <img src="img/cat.webp">
+    <p>Мы поможем найти вашему питомцу новый дом!</p>
+    <a href="#orderForm" class="btn">Заполнить форму</a>
+</section>
+<section class="order-form" id="orderForm">
+    <div class="container">
+        <h2>Форма заказа</h2>
+        <form action="your-server-side-script.php" method="post">
+            <label for="name">Ваше имя:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="phone">Телефон:</label>
+            <input type="tel" id="phone" name="phone" required>
+            <label for="details">Детали заказа:</label>
+            <textarea id="details" name="details" required></textarea>
+            <input type="submit" class="btn" value="Отправить">
+        </form>
+    </div>
+</section>
+<div class="footer-container">
+    <div>&copy; 2025, КупиКота</div>
+    <div>Социальные сети и контакты</div>
+  </div>
